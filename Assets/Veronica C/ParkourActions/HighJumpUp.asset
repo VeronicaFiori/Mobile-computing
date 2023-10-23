@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animationName: HighJumpUp
   mininumHeight: 0.7
-  maxinumHeight: 1.2
+  maxinumHeight: 1.5
+  lookAtObstacle: 1

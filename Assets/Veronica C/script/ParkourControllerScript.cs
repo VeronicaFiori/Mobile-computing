@@ -45,7 +45,18 @@ public class Jump : MonoBehaviour
         if (!animationState.IsName(action.AnimationName))
             Debug.Log("Animations Name is incorrect");
 
-        yield return new WaitForSeconds(animationState.length);
+        float timerCounter = 0f;
+        while (timerCounter <= animationState.length)
+        {
+            timerCounter += Time.deltaTime;
+
+            if (action.LookAtObstacle)
+            {
+                transform.rotation= Quaternion.RotateTowards(transform.rotation, action.RequireRotation, playerController.rotSpeed*Time.deltaTime);
+            }
+
+            yield return null;
+        }
 
         playerController.SetControl(true);
         playerInAction = false;
