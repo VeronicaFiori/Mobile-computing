@@ -8,6 +8,7 @@ public class Jump : MonoBehaviour
     public EnvironmentChecker environmentChecker;
     bool playerInAction;
     public Animator animator;
+    public PlayerController playerController;
 
     [Header("Parkour Action Area")]
     public List<NewParkourActions> NewParkourActions;
@@ -35,6 +36,7 @@ public class Jump : MonoBehaviour
     IEnumerator PerformParkourAction(NewParkourActions action)
     {
         playerInAction = true;
+        playerController.SetControl(false);
 
         animator.CrossFade(action.AnimationName, 0.2f);
         yield return null;
@@ -45,6 +47,7 @@ public class Jump : MonoBehaviour
 
         yield return new WaitForSeconds(animationState.length);
 
+        playerController.SetControl(true);
         playerInAction = false;
     }
 }
