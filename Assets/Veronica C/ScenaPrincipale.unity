@@ -30666,7 +30666,7 @@ Transform:
   m_GameObject: {fileID: 919132147749731018}
   serializedVersion: 2
   m_LocalRotation: {x: -0.003934061, y: 0.99936587, z: -0.00013931075, w: 0.035388995}
-  m_LocalPosition: {x: -1.9904108, y: 3.0103652, z: 50.94295}
+  m_LocalPosition: {x: -1.966, y: 3.107, z: 50.582}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -40958,6 +40958,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   environmentChecker: {fileID: 5866666020093966862}
   animator: {fileID: 5866666020093966858}
+  playerController: {fileID: 5866666020093966859}
   NewParkourActions:
   - {fileID: 11400000, guid: 46523aa1d9e292b41a330de916ae7366, type: 2}
   - {fileID: 11400000, guid: 7e62f056471957f409fef6263b8cd2b5, type: 2}
