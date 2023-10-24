@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Simple Modular Dungeon/Scenes/Modular Dungeon.unity
+- path: Assets/Veronica C/ScenaPrincipale.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
